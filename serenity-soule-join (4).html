@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join the Waitlist | Serenity Soule</title>
+<meta name="description" content="Join the Serenity Soule waitlist. Get early access, founding member pricing, and first look at the premium beauty membership launching in Atlanta.">
+<link rel="canonical" href="https://join.serenitysoule.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Join the Waitlist | Serenity Soule">
+<meta property="og:description" content="Something beautiful is coming. Be first.">
+<meta property="og:url" content="https://join.serenitysoule.com">
+<meta property="og:site_name" content="Serenity Soule">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #FAF6EF;
+  color: #1A0A00;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* PAGE WRAPPER */
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 32px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* WORDMARK */
+.wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #1A0A00;
+  text-decoration: none;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wordmark .accent { color: #6B1E2E; }
+.wordmark .star { color: #C9963A; font-size: 8px; opacity: 0.8; }
+
+/* EYEBROW */
+.eyebrow {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #C9963A;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* HEADLINE */
+.headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.05;
+  color: #1A0A00;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.headline em { font-style: italic; color: #6B1E2E; }
+
+/* TAGLINE */
+.tagline {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #5C4A3A;
+  margin-bottom: 24px;
+  display: block;
+}
+
+/* BODY */
+.body-text {
+  font-size: 14px;
+  line-height: 1.95;
+  color: #5C4A3A;
+  max-width: 460px;
+  margin: 0 auto 40px;
+}
+
+/* DIVIDER */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 40px;
+}
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201,150,58,0.35), transparent);
+}
+.divider-star { color: #C9963A; font-size: 8px; opacity: 0.8; }
+
+/* FORM CARD */
+.form-card {
+  width: 100%;
+  max-width: 460px;
+  background: #FAF6EF;
+  border: 1px solid rgba(107,30,46,0.14);
+  padding: 40px 44px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.form-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #6B1E2E, #C9963A);
+}
+
+.form-card-label {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #C9963A;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-card-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #1A0A00;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+.form-card-heading em { font-style: italic; color: #6B1E2E; }
+
+/* FORM */
+.form { display: flex; flex-direction: column; gap: 14px; text-align: left; }
+
+.field { display: flex; flex-direction: column; gap: 5px; }
+
+.field-label {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #5C4A3A;
+}
+
+.field-input,
+.field-select {
+  background: rgba(26,10,0,0.03);
+  border: 1px solid rgba(107,30,46,0.15);
+  padding: 12px 14px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  color: #1A0A00;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  appearance: none;
+}
+.field-input::placeholder { color: rgba(92,74,58,0.4); }
+.field-input:focus,
+.field-select:focus { border-color: #C9963A; }
+
+.submit-btn {
+  margin-top: 6px;
+  padding: 14px;
+  background: #6B1E2E;
+  color: #FAF6EF;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  border: 1px solid #6B1E2E;
+  cursor: pointer;
+  transition: background 0.25s;
+  width: 100%;
+}
+.submit-btn:hover { background: #1A0A00; border-color: #1A0A00; }
+
+.form-note {
+  font-size: 11px;
+  color: rgba(92,74,58,0.5);
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.7;
+  margin-top: 4px;
+}
+
+/* SUCCESS */
+.success-state {
+  display: none;
+  padding: 20px 0;
+  text-align: center;
+}
+.success-star { font-size: 20px; color: #C9963A; display: block; margin-bottom: 16px; }
+.success-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #1A0A00;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+.success-heading em { font-style: italic; color: #6B1E2E; }
+.success-body { font-size: 13px; line-height: 1.95; color: #5C4A3A; }
+
+/* PERKS */
+.perks {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.perk { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.perk-star { color: #C9963A; font-size: 8px; }
+.perk-label {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5C4A3A;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 28px;
+  border-top: 1px solid rgba(107,30,46,0.08);
+}
+.footer-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.footer-links a {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5C4A3A;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: #6B1E2E; }
+.footer-copy { font-size: 10px; color: rgba(92,74,58,0.4); font-family: 'Libre Baskerville', serif; }
+
+@media (max-width: 520px) {
+  .page { padding: 40px 20px 36px; }
+  .headline { font-size: 42px; }
+  .form-card { padding: 28px 24px; }
+  .perks { gap: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <a href="https://serenitysoule.com" class="wordmark"><img src="https://serenitysoule.com/wp-content/uploads/2026/06/Transparent-Logo.png" alt="Serenity Soule" style="height:52px; width:auto;"></a>
+
+  <span class="eyebrow">Coming Soon</span>
+
+  <h1 class="headline">
+    Something beautiful<br><em>is coming.</em>
+  </h1>
+
+  <span class="tagline">Made for this moment. Made for you.</span>
+
+  <p class="body-text">
+    Serenity Soule is a premium beauty membership launching in 2026. Pre-customized, ready-to-wear pieces delivered quarterly, a private community built around the people who wear them, and an experience designed around you from day one.
+  </p>
+
+  <div class="divider" aria-hidden="true">
+    <div class="divider-line"></div>
+    <span class="divider-star">✦</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <div class="form-card">
+    <span class="form-card-label">Reserve Your Spot</span>
+    <h2 class="form-card-heading">Be <em>first.</em></h2>
+
+    <!--
+      Replace this form with your MailerLite embed code.
+      Or point the action to your MailerLite form endpoint.
+    -->
+    <form class="form" id="waitlist-form" action="https://formspree.io/f/maqzdwzw" method="POST">
+      <div class="field">
+        <label class="field-label" for="first-name">First Name</label>
+        <input class="field-input" type="text" id="first-name" name="first_name" placeholder="Your first name" required>
+      </div>
+      <div class="field">
+        <label class="field-label" for="email">Email Address</label>
+        <input class="field-input" type="email" id="email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="field">
+        <label class="field-label" for="tier">Which tier interests you?</label>
+        <select class="field-select" id="tier" name="tier">
+          <option value="" disabled selected>Select a tier</option>
+          <option value="off_duty">Off Duty ($145/mo)</option>
+          <option value="after_hours">After Hours ($185/mo)</option>
+          <option value="main_character">Main Character ($225/mo)</option>
+          <option value="founding">Founding Cipher (I want the founding rate)</option>
+          <option value="undecided">Not sure yet</option>
+        </select>
+      </div>
+      <!-- Hidden field to tag the source -->
+      <input type="hidden" name="_subject" value="New Serenity Soule Waitlist Signup">
+
+      <div class="field" style="flex-direction:row; align-items:flex-start; gap:12px; margin-top:4px;">
+        <input type="checkbox" id="consent" name="marketing_consent" value="yes" style="margin-top:3px; accent-color:#6B1E2E; width:14px; height:14px; flex-shrink:0; cursor:pointer;">
+        <label for="consent" style="font-family:'Libre Baskerville',serif; font-size:11px; line-height:1.75; color:#5C4A3A; cursor:pointer;">
+          Yes, I would like to receive updates from Serenity Soule including beauty content, membership news, and exclusive offers. You can unsubscribe at any time. If you leave this unchecked you will still receive your waitlist confirmation and launch notification.
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn">Reserve My Spot</button>
+      <p class="form-note">No spam. Just early access, founding member pricing, and everything you need to know before the doors open.</p>
+    </form>
+
+    <div class="success-state" id="success-state">
+      <span class="success-star">✦</span>
+      <h2 class="success-heading">You are <em>in.</em></h2>
+      <p class="success-body" style="margin-bottom:16px;">
+        Welcome to the waitlist. You are one of the first to know and that means something around here.
+      </p>
+      <p class="success-body" style="margin-bottom:16px;">
+        Check your inbox for a confirmation from Serenity Soule. We will be in touch with early access details, founding member perks, and everything you need before the doors open.
+      </p>
+      <p class="success-body">
+        Sit back. Something beautiful is coming and it was made for you.
+      </p>
+      <p style="font-family:'Libre Baskerville',serif; font-size:10px; letter-spacing:0.25em; text-transform:uppercase; color:#C9963A; margin-top:28px;">Made for this moment. Made for you.</p>
+    </div>
+  </div>
+
+  <div class="perks">
+    <div class="perk">
+      <span class="perk-star">✦</span>
+      <span class="perk-label">Early Access</span>
+    </div>
+    <div class="perk">
+      <span class="perk-star">✦</span>
+      <span class="perk-label">Founding Member Pricing</span>
+    </div>
+    <div class="perk">
+      <span class="perk-star">✦</span>
+      <span class="perk-label">Members-Only Community</span>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://serenitysoule.com">serenitysoule.com</a>
+      <a href="https://serenitysoule.com/membership">Membership</a>
+      <a href="https://serenitysoule.com/about">About</a>
+      <a href="https://serenitysoule.com/privacy">Privacy Policy</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Serenity Soule. Lawrenceville, GA.</p>
+  </footer>
+
+</div>
+
+<!-- SUCCESS POPUP -->
+<div id="success-popup" style="display:none; position:fixed; inset:0; z-index:1000; background:rgba(26,10,0,0.6); align-items:center; justify-content:center; padding:24px;">
+  <div style="background:#FAF6EF; max-width:480px; width:100%; padding:52px 44px; text-align:center; position:relative; border-top:2px solid #C9963A;">
+    <button onclick="document.getElementById('success-popup').style.display='none'" style="position:absolute; top:16px; right:20px; background:none; border:none; cursor:pointer; font-family:'Libre Baskerville',serif; font-size:18px; color:#5C4A3A; line-height:1;">&times;</button>
+    <span style="font-size:20px; color:#C9963A; display:block; margin-bottom:20px;">✦</span>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-size:36px; font-weight:300; color:#1A0A00; margin-bottom:16px; line-height:1.15;">You are <em style="font-style:italic; color:#6B1E2E;">in.</em></h2>
+    <p style="font-family:'Libre Baskerville',serif; font-size:13px; line-height:1.95; color:#5C4A3A; margin-bottom:12px;">Welcome to the waitlist. You are one of the first to know and that means something around here.</p>
+    <p style="font-family:'Libre Baskerville',serif; font-size:13px; line-height:1.95; color:#5C4A3A; margin-bottom:12px;">Check your inbox for a confirmation from Serenity Soule. We will be in touch with early access details, founding member perks, and everything you need before the doors open.</p>
+    <p style="font-family:'Libre Baskerville',serif; font-size:13px; line-height:1.95; color:#5C4A3A; margin-bottom:28px;">Sit back. Something beautiful is coming and it was made for you.</p>
+    <p style="font-family:'Libre Baskerville',serif; font-size:10px; letter-spacing:0.25em; text-transform:uppercase; color:#C9963A;">Made for this moment. Made for you.</p>
+  </div>
+</div>
+
+<script>
+  document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = this;
+    const btn = form.querySelector('.submit-btn');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+        btn.textContent = 'Reserve My Spot';
+        btn.disabled = false;
+        const popup = document.getElementById('success-popup');
+        popup.style.display = 'flex';
+      } else {
+        btn.textContent = 'Something went wrong. Try again.';
+        btn.disabled = false;
+      }
+    } catch (error) {
+      btn.textContent = 'Something went wrong. Try again.';
+      btn.disabled = false;
+    }
+  });
+
+  // Close popup when clicking outside
+  document.getElementById('success-popup').addEventListener('click', function(e) {
+    if (e.target === this) this.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>

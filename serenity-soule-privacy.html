@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Serenity Soule</title>
+<meta name="description" content="Serenity Soule's privacy policy. How we collect, use, and protect your personal information.">
+<link rel="canonical" href="https://serenitysoule.com/privacy">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory: #FAF6EF; --burgundy: #6B1E2E; --gold: #C9963A;
+    --espresso: #1A0A00; --gold-light: #E8C97A; --warm-mid: #F0E8D8; --text-muted: #5C4A3A;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ivory); color: var(--espresso); font-family: 'Libre Baskerville', Georgia, serif; font-size: 16px; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+
+  .ss-nav { display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 5vw; border-bottom: 1px solid rgba(107,30,46,0.15); background: var(--ivory); position: sticky; top: 0; z-index: 100; }
+  .ss-nav__wordmark { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; letter-spacing: 0.12em; color: var(--espresso); text-decoration: none; text-transform: uppercase; }
+  .ss-nav__wordmark span { color: var(--burgundy); }
+  .ss-nav__links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+  .ss-nav__links a { font-family: 'Libre Baskerville', serif; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+  .ss-nav__links a:hover { color: var(--burgundy); }
+  .ss-nav__cta { background: var(--burgundy); color: var(--ivory) !important; padding: 0.6rem 1.4rem; font-size: 0.65rem !important; letter-spacing: 0.2em; transition: background 0.2s !important; }
+  .ss-nav__cta:hover { background: var(--espresso) !important; }
+
+  .ss-hero { background: var(--espresso); padding: 4rem 7vw 3rem; }
+  .ss-hero__label { font-family: 'Libre Baskerville', serif; font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 1.2rem; display: block; }
+  .ss-hero__heading { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 300; line-height: 1.1; color: var(--ivory); margin-bottom: 1.5rem; }
+  .ss-hero__heading em { font-style: italic; color: var(--gold-light); }
+  .ss-hero__meta { font-family: 'Libre Baskerville', serif; font-size: 0.75rem; color: rgba(250,246,239,0.4); }
+
+  .ss-legal-wrap { display: grid; grid-template-columns: 240px 1fr; gap: 6rem; padding: 3rem 7vw 7rem; align-items: start; }
+
+  .ss-toc { position: sticky; top: 5rem; }
+  .ss-toc__label { font-family: 'Libre Baskerville', serif; font-size: 0.58rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
+  .ss-toc__list { list-style: none; display: flex; flex-direction: column; gap: 1px; }
+  .ss-toc__list a { display: block; font-family: 'Libre Baskerville', serif; font-size: 0.72rem; color: var(--text-muted); text-decoration: none; padding: 0.65rem 1rem; border-left: 2px solid transparent; transition: color 0.2s, border-color 0.2s, background 0.2s; background: var(--warm-mid); }
+  .ss-toc__list a:hover { color: var(--burgundy); border-left-color: var(--gold); background: #EAE0CE; }
+
+  .ss-legal-content { max-width: 720px; }
+  .ss-legal-intro { font-size: 1rem; line-height: 1.95; color: var(--text-muted); padding-bottom: 3rem; border-bottom: 1px solid rgba(107,30,46,0.1); margin-bottom: 3rem; }
+
+  .ss-legal-section { padding-bottom: 3rem; border-bottom: 1px solid rgba(107,30,46,0.1); margin-bottom: 3rem; scroll-margin-top: 6rem; }
+  .ss-legal-section:last-child { border-bottom: none; }
+  .ss-legal-section__label { font-family: 'Libre Baskerville', serif; font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; display: block; }
+  .ss-legal-section__heading { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; color: var(--espresso); margin-bottom: 1.5rem; line-height: 1.2; }
+  .ss-legal-section__heading em { font-style: italic; color: var(--burgundy); }
+  .ss-legal-section p { font-size: 0.92rem; line-height: 1.95; color: var(--text-muted); margin-bottom: 1.25rem; }
+  .ss-legal-section p:last-child { margin-bottom: 0; }
+  .ss-legal-section strong { color: var(--espresso); font-weight: 700; }
+  .ss-legal-list { list-style: none; margin: 1rem 0 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; }
+  .ss-legal-list li { font-size: 0.9rem; line-height: 1.85; color: var(--text-muted); padding-left: 1.5rem; position: relative; }
+  .ss-legal-list li::before { content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background: var(--gold); position: absolute; left: 0; top: 0.6rem; }
+
+  .ss-legal-callout { border-left: 2px solid var(--gold); background: rgba(201,150,58,0.05); padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+  .ss-legal-callout p { font-size: 0.88rem; line-height: 1.85; color: var(--text-muted); margin: 0; }
+
+  .ss-footer { background: var(--espresso); padding: 4rem 7vw 2rem; border-top: 1px solid rgba(201,150,58,0.2); }
+  .ss-footer__top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(250,246,239,0.08); margin-bottom: 2rem; }
+  .ss-footer__brand-name { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ivory); text-decoration: none; display: block; margin-bottom: 1rem; }
+  .ss-footer__brand-name span { color: var(--burgundy); }
+  .ss-footer__tagline { font-family: 'Libre Baskerville', serif; font-size: 0.78rem; font-style: italic; color: var(--gold); margin-bottom: 1.25rem; display: block; }
+  .ss-footer__brand-desc { font-size: 0.82rem; line-height: 1.85; color: rgba(250,246,239,0.4); }
+  .ss-footer__col-label { font-family: 'Libre Baskerville', serif; font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; display: block; }
+  .ss-footer__links { list-style: none; }
+  .ss-footer__links li { margin-bottom: 0.65rem; }
+  .ss-footer__links a { font-size: 0.82rem; color: rgba(250,246,239,0.45); text-decoration: none; transition: color 0.2s; font-family: 'Libre Baskerville', serif; }
+  .ss-footer__links a:hover { color: var(--ivory); }
+  .ss-footer__bottom { display: flex; align-items: center; justify-content: space-between; }
+  .ss-footer__copy { font-size: 0.68rem; color: rgba(250,246,239,0.25); font-family: 'Libre Baskerville', serif; }
+  .ss-footer__social { display: flex; gap: 1.5rem; }
+  .ss-footer__social a { font-family: 'Libre Baskerville', serif; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(250,246,239,0.35); text-decoration: none; transition: color 0.2s; }
+  .ss-footer__social a:hover { color: var(--gold); }
+
+  @media (max-width: 900px) {
+    .ss-legal-wrap { grid-template-columns: 1fr; gap: 3rem; }
+    .ss-toc { position: static; }
+    .ss-footer__top { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .ss-footer__bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    .ss-nav__links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="ss-nav">
+  <a href="/" class="ss-nav__wordmark"><img src="https://serenitysoule.com/wp-content/uploads/2026/06/Transparent-Logo.png" alt="Serenity Soule" style="height:44px; width:auto;"></a>
+  <ul class="ss-nav__links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/how-it-works">How It Works</a></li>
+    <li><a href="/membership">Membership</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="https://join.serenitysoule.com" class="ss-nav__cta">Join the Waitlist</a></li>
+  </ul>
+</nav>
+
+<header class="ss-hero">
+  <span class="ss-hero__label">Legal</span>
+  <h1 class="ss-hero__heading">Privacy <em>Policy</em></h1>
+  <p class="ss-hero__meta">Effective date: June 1, 2026 &nbsp;&bull;&nbsp; Last updated: June 1, 2026</p>
+</header>
+
+<div class="ss-legal-wrap">
+
+  <nav class="ss-toc" aria-label="Table of contents">
+    <span class="ss-toc__label">Contents</span>
+    <ul class="ss-toc__list">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#information-collected">Information We Collect</a></li>
+      <li><a href="#how-we-use">How We Use It</a></li>
+      <li><a href="#sharing">Sharing Your Information</a></li>
+      <li><a href="#data-security">Data Security</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#your-rights">Your Rights</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="ss-legal-content">
+    <p style="font-family:'Libre Baskerville',serif; font-size:0.6rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); margin-bottom:1.5rem; display:block;">Please read carefully</p>
+    <p class="ss-legal-intro">
+      Serenity Soule is a small, personal brand and we take your privacy seriously. This policy explains in plain language what information we collect when you visit serenitysoule.com or use the Serenity Soule membership, how we use it, and what choices you have. If you have a question that is not answered here, reach out at hello@serenitysoule.com and we will come back to you directly.
+    </p>
+
+    <div class="ss-legal-section" id="overview">
+      <span class="ss-legal-section__label">01</span>
+      <h2 class="ss-legal-section__heading">Overview</h2>
+      <p>Serenity Soule LLC ("Serenity Soule," "we," "us," or "our") operates the website located at serenitysoule.com and the associated beauty membership service. This Privacy Policy applies to all information collected through our website, member portal, email communications, and any other interactions you have with Serenity Soule.</p>
+      <p>By using our website or joining the membership, you agree to the collection and use of information as described in this policy.</p>
+    </div>
+
+    <div class="ss-legal-section" id="information-collected">
+      <span class="ss-legal-section__label">02</span>
+      <h2 class="ss-legal-section__heading">Information <em>We Collect</em></h2>
+      <p>We collect information in a few ways depending on how you interact with Serenity Soule.</p>
+      <p><strong>Information you give us directly</strong> includes your name, email address, shipping address, payment information, and any preferences or profile details you submit when joining the membership or completing your style profile. This includes your cap size selection, skin tone, texture preferences, length preferences, and lifestyle notes.</p>
+      <p><strong>Information collected automatically</strong> includes standard website data such as your IP address, browser type, pages visited, time spent on pages, and referring URLs. This is collected through cookies and similar technologies and is used to understand how people use the site so we can improve it.</p>
+      <p><strong>Information from third parties</strong> may include data from payment processors like Stripe and membership platform providers used to operate the member portal. These providers have their own privacy policies that govern how they handle your data.</p>
+    </div>
+
+    <div class="ss-legal-section" id="how-we-use">
+      <span class="ss-legal-section__label">03</span>
+      <h2 class="ss-legal-section__heading">How We <em>Use It</em></h2>
+      <p>We use the information we collect to operate and improve the Serenity Soule membership experience. Specifically we use it to:</p>
+      <ul class="ss-legal-list">
+        <li>Process your membership, billing, and rotation shipments</li>
+        <li>Prepare and finish your pieces to your personal style profile</li>
+        <li>Communicate with you about your membership, rotations, and account</li>
+        <li>Send you membership-related updates and the Cipher community content you have opted into</li>
+        <li>Respond to your questions and support requests</li>
+        <li>Improve our website, membership experience, and operations</li>
+        <li>Comply with legal obligations</li>
+      </ul>
+      <p>We do not use your information to serve you third-party advertisements and we do not sell your data to anyone.</p>
+    </div>
+
+    <div class="ss-legal-section" id="sharing">
+      <span class="ss-legal-section__label">04</span>
+      <h2 class="ss-legal-section__heading">Sharing Your <em>Information</em></h2>
+      <p>Serenity Soule does not sell, rent, or trade your personal information. We share it only in the limited circumstances described below.</p>
+      <p><strong>Service providers</strong> we work with to operate the membership may receive your information as needed to perform their services. This includes our payment processor, shipping carriers, and the platform powering our member portal. These providers are contractually required to protect your information and may only use it for the purposes we specify.</p>
+      <p><strong>Legal requirements</strong> may require us to disclose your information if we are required to do so by law or in response to valid legal process such as a subpoena or court order.</p>
+      <p><strong>Business transfers</strong> in the event of a merger, acquisition, or sale of Serenity Soule's assets, your information may be transferred as part of that transaction. You will be notified via email and a notice on our website if this occurs.</p>
+      <div class="ss-legal-callout">
+        <p>Serenity Soule products are ad-free. We do not allow advertisers to pay to reach you through our platform and we do not share your data for advertising purposes.</p>
+      </div>
+    </div>
+
+    <div class="ss-legal-section" id="data-security">
+      <span class="ss-legal-section__label">05</span>
+      <h2 class="ss-legal-section__heading">Data <em>Security</em></h2>
+      <p>We take reasonable technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction. Payment information is processed through Stripe and is never stored on Serenity Soule's servers.</p>
+      <p>No method of transmission over the internet or electronic storage is completely secure. While we work hard to protect your information, we cannot guarantee absolute security and encourage you to use strong passwords and protect your account credentials.</p>
+    </div>
+
+    <div class="ss-legal-section" id="cookies">
+      <span class="ss-legal-section__label">06</span>
+      <h2 class="ss-legal-section__heading">Cookies</h2>
+      <p>Serenitysoule.com uses cookies and similar tracking technologies to improve your browsing experience and understand how visitors use the site. Cookies are small text files stored on your device when you visit a website.</p>
+      <p>We use cookies to keep you logged in to the member portal, remember your preferences, and analyze site traffic. You can control cookie settings through your browser. Disabling cookies may affect the functionality of certain parts of the site, including the member portal.</p>
+    </div>
+
+    <div class="ss-legal-section" id="your-rights">
+      <span class="ss-legal-section__label">07</span>
+      <h2 class="ss-legal-section__heading">Your <em>Rights</em></h2>
+      <p>You have the right to access, correct, or delete the personal information Serenity Soule holds about you. You also have the right to object to or restrict certain processing of your data and to request a portable copy of your data.</p>
+      <p>To exercise any of these rights, email us at hello@serenitysoule.com with your request. We will respond within 30 days and in accordance with applicable law. If your request is complex or you have submitted multiple requests, we may extend this period by an additional 30 days with notice to you.</p>
+      <p>If you are a California resident, you may have additional rights under the California Consumer Privacy Act (CCPA). These include the right to know what personal information we have collected about you, the right to request deletion, and the right to opt out of the sale of your personal information. Serenity Soule does not sell personal information.</p>
+    </div>
+
+    <div class="ss-legal-section" id="retention">
+      <span class="ss-legal-section__label">08</span>
+      <h2 class="ss-legal-section__heading">Data <em>Retention</em></h2>
+      <p>We retain your personal information for as long as your membership is active and for up to 3 years afterward to fulfill legal, accounting, and operational obligations. Damage assessment records including photographic documentation are retained for the duration of your membership and for 1 year after cancellation. When your information is no longer needed we delete or anonymize it securely.</p>
+      <p>If you request deletion of your account, we will delete or anonymize your personal information within 30 days of your request, except where we are required to retain it by law or for legitimate business purposes such as resolving disputes, enforcing our agreements, or maintaining financial records required by applicable law.</p>
+    </div>
+
+    <div class="ss-legal-section" id="children">
+      <span class="ss-legal-section__label">09</span>
+      <h2 class="ss-legal-section__heading">Children</h2>
+      <p>Serenity Soule is not directed at children under the age of 18 and we do not knowingly collect personal information from minors. If we become aware that we have collected information from someone under 18 without parental consent, we will delete it promptly. If you believe we have collected information from a minor, contact us at hello@serenitysoule.com.</p>
+    </div>
+
+    <div class="ss-legal-section" id="changes">
+      <span class="ss-legal-section__label">10</span>
+      <h2 class="ss-legal-section__heading">Changes to <em>This Policy</em></h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will update the effective date at the top of this page and notify active members via email if the changes are material. Continued use of the Serenity Soule website or membership after changes are posted constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div class="ss-legal-section" id="contact">
+      <span class="ss-legal-section__label">11</span>
+      <h2 class="ss-legal-section__heading">Contact</h2>
+      <p>If you have questions about this Privacy Policy or how Serenity Soule handles your information, reach out at any time.</p>
+      <p><strong>Serenity Soule LLC</strong><br>Lawrenceville, Georgia<br><a href="https://serenitysoule.com/contact" style="color:var(--burgundy);">hello@serenitysoule.com</a></p>
+    </div>
+
+  </div>
+</div>
+
+<footer class="ss-footer">
+  <div class="ss-footer__top">
+    <div>
+      <a href="/" class="ss-footer__brand-name">Serenity <span>Soule</span></a>
+      <span class="ss-footer__tagline">Made for this moment. Made for you.</span>
+      <p class="ss-footer__brand-desc">A premium beauty membership based in Metro Atlanta, GA. Pre-customized, ready-to-wear pieces delivered quarterly. Est. 2026.</p>
+    </div>
+    <div>
+      <span class="ss-footer__col-label">Membership</span>
+      <ul class="ss-footer__links">
+        <li><a href="/membership">All Tiers</a></li>
+        <li><a href="/how-it-works">How It Works</a></li>
+        <li><a href="/membership#founding">Founding Ciphers</a></li>
+        <li><a href="https://join.serenitysoule.com">Join Waitlist</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="ss-footer__col-label">About</span>
+      <ul class="ss-footer__links">
+        <li><a href="/about">Our Story</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="ss-footer__col-label">Follow Along</span>
+      <ul class="ss-footer__links">
+        <li><a href="https://www.instagram.com/serenitysoulebeauty" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@serenitysoule" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="https://pinterest.com/serenitysoulebeauty" target="_blank" rel="noopener">Pinterest</a></li>
+        <li><a href="https://facebook.com/serenitysoule" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ss-footer__bottom">
+    <span class="ss-footer__copy">&copy; 2026 Serenity Soule. All rights reserved. Lawrenceville, GA.</span>
+    <div class="ss-footer__social">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="https://serenitysoule.com/contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

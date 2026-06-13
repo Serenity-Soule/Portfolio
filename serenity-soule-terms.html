@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | Serenity Soule</title>
+<meta name="description" content="Serenity Soule's terms of service. Membership terms, rotation policy, damage policy, cancellation, and member responsibilities.">
+<link rel="canonical" href="https://serenitysoule.com/terms">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory: #FAF6EF; --burgundy: #6B1E2E; --gold: #C9963A;
+    --espresso: #1A0A00; --gold-light: #E8C97A; --warm-mid: #F0E8D8; --text-muted: #5C4A3A;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ivory); color: var(--espresso); font-family: 'Libre Baskerville', Georgia, serif; font-size: 16px; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+
+  .ss-nav { display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 5vw; border-bottom: 1px solid rgba(107,30,46,0.15); background: var(--ivory); position: sticky; top: 0; z-index: 100; }
+  .ss-nav__wordmark { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; letter-spacing: 0.12em; color: var(--espresso); text-decoration: none; text-transform: uppercase; }
+  .ss-nav__wordmark span { color: var(--burgundy); }
+  .ss-nav__links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+  .ss-nav__links a { font-family: 'Libre Baskerville', serif; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+  .ss-nav__links a:hover { color: var(--burgundy); }
+  .ss-nav__cta { background: var(--burgundy); color: var(--ivory) !important; padding: 0.6rem 1.4rem; font-size: 0.65rem !important; letter-spacing: 0.2em; transition: background 0.2s !important; }
+  .ss-nav__cta:hover { background: var(--espresso) !important; }
+
+  .ss-hero { background: var(--espresso); padding: 4rem 7vw 3rem; }
+  .ss-hero__label { font-family: 'Libre Baskerville', serif; font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 1.2rem; display: block; }
+  .ss-hero__heading { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 300; line-height: 1.1; color: var(--ivory); margin-bottom: 1.5rem; }
+  .ss-hero__heading em { font-style: italic; color: var(--gold-light); }
+  .ss-hero__meta { font-family: 'Libre Baskerville', serif; font-size: 0.75rem; color: rgba(250,246,239,0.4); }
+
+  .ss-legal-wrap { display: grid; grid-template-columns: 240px 1fr; gap: 6rem; padding: 3rem 7vw 7rem; align-items: start; }
+
+  .ss-toc { position: sticky; top: 5rem; }
+  .ss-toc__label { font-family: 'Libre Baskerville', serif; font-size: 0.58rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
+  .ss-toc__list { list-style: none; display: flex; flex-direction: column; gap: 1px; }
+  .ss-toc__list a { display: block; font-family: 'Libre Baskerville', serif; font-size: 0.72rem; color: var(--text-muted); text-decoration: none; padding: 0.65rem 1rem; border-left: 2px solid transparent; transition: color 0.2s, border-color 0.2s, background 0.2s; background: var(--warm-mid); }
+  .ss-toc__list a:hover { color: var(--burgundy); border-left-color: var(--gold); background: #EAE0CE; }
+
+  .ss-legal-content { max-width: 720px; }
+  .ss-legal-intro { font-size: 1rem; line-height: 1.95; color: var(--text-muted); padding-bottom: 3rem; border-bottom: 1px solid rgba(107,30,46,0.1); margin-bottom: 3rem; }
+
+  .ss-legal-section { padding-bottom: 3rem; border-bottom: 1px solid rgba(107,30,46,0.1); margin-bottom: 3rem; scroll-margin-top: 6rem; }
+  .ss-legal-section:last-child { border-bottom: none; }
+  .ss-legal-section__label { font-family: 'Libre Baskerville', serif; font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; display: block; }
+  .ss-legal-section__heading { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; color: var(--espresso); margin-bottom: 1.5rem; line-height: 1.2; }
+  .ss-legal-section__heading em { font-style: italic; color: var(--burgundy); }
+  .ss-legal-section p { font-size: 0.92rem; line-height: 1.95; color: var(--text-muted); margin-bottom: 1.25rem; }
+  .ss-legal-section p:last-child { margin-bottom: 0; }
+  .ss-legal-section strong { color: var(--espresso); font-weight: 700; }
+  .ss-legal-list { list-style: none; margin: 1rem 0 1.25rem; display: flex; flex-direction: column; gap: 0.65rem; }
+  .ss-legal-list li { font-size: 0.9rem; line-height: 1.85; color: var(--text-muted); padding-left: 1.5rem; position: relative; }
+  .ss-legal-list li::before { content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background: var(--gold); position: absolute; left: 0; top: 0.6rem; }
+
+  .ss-legal-callout { border-left: 2px solid var(--gold); background: rgba(201,150,58,0.05); padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+  .ss-legal-callout p { font-size: 0.88rem; line-height: 1.85; color: var(--text-muted); margin: 0; }
+
+  .ss-fee-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.88rem; }
+  .ss-fee-table th { font-family: 'Libre Baskerville', serif; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid rgba(107,30,46,0.15); background: rgba(201,150,58,0.04); }
+  .ss-fee-table td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(107,30,46,0.08); color: var(--text-muted); font-family: 'Libre Baskerville', serif; vertical-align: top; }
+  .ss-fee-table tr:last-child td { border-bottom: none; }
+
+  .ss-footer { background: var(--espresso); padding: 4rem 7vw 2rem; border-top: 1px solid rgba(201,150,58,0.2); }
+  .ss-footer__top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(250,246,239,0.08); margin-bottom: 2rem; }
+  .ss-footer__brand-name { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ivory); text-decoration: none; display: block; margin-bottom: 1rem; }
+  .ss-footer__brand-name span { color: var(--burgundy); }
+  .ss-footer__tagline { font-family: 'Libre Baskerville', serif; font-size: 0.78rem; font-style: italic; color: var(--gold); margin-bottom: 1.25rem; display: block; }
+  .ss-footer__brand-desc { font-size: 0.82rem; line-height: 1.85; color: rgba(250,246,239,0.4); }
+  .ss-footer__col-label { font-family: 'Libre Baskerville', serif; font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; display: block; }
+  .ss-footer__links { list-style: none; }
+  .ss-footer__links li { margin-bottom: 0.65rem; }
+  .ss-footer__links a { font-size: 0.82rem; color: rgba(250,246,239,0.45); text-decoration: none; transition: color 0.2s; font-family: 'Libre Baskerville', serif; }
+  .ss-footer__links a:hover { color: var(--ivory); }
+  .ss-footer__bottom { display: flex; align-items: center; justify-content: space-between; }
+  .ss-footer__copy { font-size: 0.68rem; color: rgba(250,246,239,0.25); font-family: 'Libre Baskerville', serif; }
+  .ss-footer__social { display: flex; gap: 1.5rem; }
+  .ss-footer__social a { font-family: 'Libre Baskerville', serif; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(250,246,239,0.35); text-decoration: none; transition: color 0.2s; }
+  .ss-footer__social a:hover { color: var(--gold); }
+
+  @media (max-width: 900px) {
+    .ss-legal-wrap { grid-template-columns: 1fr; gap: 3rem; }
+    .ss-toc { position: static; }
+    .ss-footer__top { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .ss-footer__bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    .ss-nav__links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="ss-nav">
+  <a href="/" class="ss-nav__wordmark"><img src="https://serenitysoule.com/wp-content/uploads/2026/06/Transparent-Logo.png" alt="Serenity Soule" style="height:44px; width:auto;"></a>
+  <ul class="ss-nav__links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/how-it-works">How It Works</a></li>
+    <li><a href="/membership">Membership</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="https://join.serenitysoule.com" class="ss-nav__cta">Join the Waitlist</a></li>
+  </ul>
+</nav>
+
+<header class="ss-hero">
+  <span class="ss-hero__label">Legal</span>
+  <h1 class="ss-hero__heading">Terms of <em>Service</em></h1>
+  <p class="ss-hero__meta">Effective date: June 1, 2026 &nbsp;&bull;&nbsp; Last updated: June 1, 2026</p>
+</header>
+
+<div class="ss-legal-wrap">
+
+  <nav class="ss-toc" aria-label="Table of contents">
+    <span class="ss-toc__label">Contents</span>
+    <ul class="ss-toc__list">
+      <li><a href="#agreement">Agreement</a></li>
+      <li><a href="#membership">Membership Terms</a></li>
+      <li><a href="#billing">Billing and Deposit</a></li>
+      <li><a href="#rotation">Rotation and Returns</a></li>
+      <li><a href="#member-care">Member Responsibilities</a></li>
+      <li><a href="#damage">Damage Policy</a></li>
+      <li><a href="#buyout">Buyout Option</a></li>
+      <li><a href="#cancellation">Cancellation and Changes</a></li>
+      <li><a href="#founding">Founding Cipher Terms</a></li>
+      <li><a href="#conduct">Member Conduct</a></li>
+      <li><a href="#intellectual-property">Intellectual Property</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#disputes">Disputes</a></li>
+      <li><a href="#changes">Changes to These Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="ss-legal-content">
+    <p style="font-family:'Libre Baskerville',serif; font-size:0.6rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); margin-bottom:1.5rem; display:block;">Please read carefully</p>
+    <p class="ss-legal-intro">
+      These Terms of Service govern your use of the Serenity Soule website and beauty membership. By joining the membership or using the website, you agree to these terms. Please read them carefully. If you have questions, reach out at hello@serenitysoule.com before signing up.
+    </p>
+
+    <div class="ss-legal-section" id="agreement">
+      <span class="ss-legal-section__label">01</span>
+      <h2 class="ss-legal-section__heading">Agreement</h2>
+      <p>These Terms of Service ("Terms") constitute a binding agreement between you and Serenity Soule LLC ("Serenity Soule," "we," "us," or "our"), a Georgia limited liability company. By accessing serenitysoule.com, joining the Serenity Soule membership, or using the member portal, you confirm that you have read, understood, and agreed to these Terms.</p>
+      <p>You must be at least 18 years old and reside in the United States to use the Serenity Soule membership.</p>
+    </div>
+
+    <div class="ss-legal-section" id="membership">
+      <span class="ss-legal-section__label">02</span>
+      <h2 class="ss-legal-section__heading">Membership <em>Terms</em></h2>
+      <p>The Serenity Soule membership is a monthly subscription that provides access to a quarterly rotation of pre-customized, professionally finished beauty pieces. Three membership tiers are available: Off Duty, After Hours, and Main Character. Each tier is described in detail on the membership page at serenitysoule.com/membership.</p>
+      <p>Membership begins on the date your first payment is successfully processed and your style profile is complete. Your first piece will ship within the preparation window communicated to you after sign-up.</p>
+      <p>Membership is personal and non-transferable. You may not share, sell, or transfer your membership or member account to another person.</p>
+    </div>
+
+    <div class="ss-legal-section" id="billing">
+      <span class="ss-legal-section__label">03</span>
+      <h2 class="ss-legal-section__heading">Billing <em>and Deposit</em></h2>
+      <p>Your membership is billed monthly on your billing date. Autopay is required for all active memberships. By joining, you authorize Serenity Soule to charge your payment method on file on your billing date each month until you cancel.</p>
+      <p>A fully refundable deposit of <strong>$50.00</strong> is required at sign-up. The deposit is held throughout your active membership and returned to you when your membership ends in good standing, meaning your current rotation piece has been returned in acceptable condition and your account has no outstanding balance.</p>
+      <p>The deposit may be applied toward any outstanding damage fees, unpaid balances, or a buyout fee if you choose to keep your piece. When the deposit is applied in full or in part, it must be replenished to the full $50.00 amount before your next rotation ships.</p>
+      <p>If a payment fails, Serenity Soule will notify you and provide a reasonable grace period to update your payment information before any membership action is taken. Prepaid cards are accepted but Serenity Soule cannot guarantee successful processing on all prepaid card types. Members using prepaid cards are responsible for ensuring sufficient funds are available on their billing date.</p>
+
+      <p><strong>Hygiene certification.</strong> Every rotation piece goes through a six-stage professional preparation process before it ships: intake and assessment, deep sanitization, hair restoration, knot bleaching, quality inspection, and packaging. Serenity Soule certifies that every piece shipped meets our hygiene and quality standards. A rotation certification card is included in every box confirming the piece's rotation status.</p>
+
+    <div class="ss-legal-section" id="rotation">
+      <span class="ss-legal-section__label">04</span>
+      <h2 class="ss-legal-section__heading">Rotation <em>and Returns</em></h2>
+      <p>Each rotation cycle is 90 days from the date your piece is delivered. At the end of your rotation cycle you are required to return your piece using the prepaid return label included in your box. Pieces must be returned within 7 days of the end of your rotation cycle.</p>
+      <p>Pieces must be returned in a clean condition, free of excessive tangles, foreign substances, or modifications not authorized by Serenity Soule. Normal wear and styling variation from daily use over the 90-day period is expected and will not result in a damage assessment.</p>
+      <p>Failure to return your piece within the return window without prior communication with Serenity Soule may result in a late fee and possible membership suspension. Loss of a piece without a reported incident will be treated as a damage claim at the applicable tier rate.</p>
+    </div>
+
+    <div class="ss-legal-section" id="member-care">
+      <span class="ss-legal-section__label">05</span>
+      <h2 class="ss-legal-section__heading">Member <em>Responsibilities</em></h2>
+      <p>As a Serenity Soule member you agree to care for your rotation piece in accordance with the care instructions provided with your membership. Your responsibilities include:</p>
+      <ul class="ss-legal-list">
+        <li>Storing your piece properly when not in use, including use of the provided satin-lined sleep cap when sleeping</li>
+        <li>Using heat tools within the recommended temperature range for your tier's hair type</li>
+        <li>Avoiding exposure to chlorine, saltwater, or other harsh chemicals without prior authorization</li>
+        <li>Not applying color treatments, bleach, or chemical processes to your rotation piece without prior written authorization from Serenity Soule</li>
+        <li>Returning your piece using the prepaid return label within the required return window</li>
+        <li>Notifying Serenity Soule promptly if your piece is lost, stolen, or damaged</li>
+      </ul>
+      <p>Serenity Soule reserves the right to assess the condition of each returning piece against these standards and issue a damage assessment where warranted.</p>
+    </div>
+
+    <div class="ss-legal-section" id="damage">
+      <span class="ss-legal-section__label">06</span>
+      <h2 class="ss-legal-section__heading">Damage <em>Policy</em></h2>
+      <p>Serenity Soule understands that pieces experience normal wear over a 90-day rotation and does not charge for normal wear. Damage assessments are issued only when a piece is returned with damage beyond what would be expected from ordinary daily use in accordance with the care instructions.</p>
+      <p>Examples of damage include but are not limited to significant weft loss or shedding beyond normal levels, heat damage from excessive or improper tool use, unauthorized color treatments or chemical processing, tears or structural damage to the cap, lace, or wefts, and loss of the piece without a reported incident.</p>
+      <p>Damage incidents are tracked across a member's history. The following fee structure applies:</p>
+
+      <table class="ss-fee-table">
+        <thead>
+          <tr>
+            <th>Incident</th>
+            <th>Off Duty</th>
+            <th>After Hours</th>
+            <th>Main Character</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First incident</td>
+            <td>$155.00</td>
+            <td>$170.00</td>
+            <td>$186.00</td>
+          </tr>
+          <tr>
+            <td>Second incident</td>
+            <td>$232.50</td>
+            <td>$255.00</td>
+            <td>$279.00</td>
+          </tr>
+          <tr>
+            <td>Third incident</td>
+            <td>$310.00</td>
+            <td>$340.00</td>
+            <td>$372.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>A first incident results in the standard damage fee and a written notice. A second incident results in an escalated damage fee and a formal warning. A third incident results in an escalated damage fee and automatic membership review.</p>
+      <p>Serenity Soule reserves the right to revoke membership following a third damage incident, or at any time in cases of intentional damage, loss of a piece without payment, or initiation of a fraudulent payment dispute. Revocation is always a last resort and will be communicated clearly before any action is taken.</p>
+      <p><strong>Damage documentation.</strong> Every rotation piece is photographed at four stages: original intake, post-finishing before first shipment, post-refurbishment before subsequent shipments, and return inspection after each rotation. These photographs are maintained in your account record and serve as the evidence base for all damage assessments. You may request your photographic record in writing within 30 days of receiving a damage assessment.</p>
+
+      <p><strong>Damage disputes.</strong> If you disagree with a damage assessment, you must submit a written dispute to hello@serenitysoule.com within 14 days of receiving the assessment notice. Disputes are reviewed against the photographic record and resolved within 7 business days. Serenity Soule's decision following review is final. By joining the membership you agree not to initiate chargebacks or payment disputes with your card issuer in lieu of this formal dispute process.</p>
+
+      <p><strong>Immediate revocation.</strong> The following actions result in immediate membership revocation without progression through the strike system: intentional damage to a rotation piece, loss of a piece without payment of the applicable damage fee, initiation of fraudulent payment disputes or chargebacks related to legitimate damage charges, and three irreparable damage incidents within any 12-month membership period.</p>
+    </div>
+
+    <div class="ss-legal-section" id="buyout">
+      <span class="ss-legal-section__label">07</span>
+      <h2 class="ss-legal-section__heading">Buyout <em>Option</em></h2>
+      <p>Members may purchase their current rotation piece at any point during their rotation cycle. The buyout fee is calculated dynamically based on the piece's current condition and the tier it belongs to at the time of the request.</p>
+      <p>To initiate a buyout, contact hello@serenitysoule.com. Serenity Soule will provide a buyout fee quote and instructions for completing the purchase. Once a buyout is completed, the piece belongs to you and does not need to be returned. Your next rotation will begin as scheduled.</p>
+      <p>If the $50 deposit is applied toward a buyout fee, it must be replenished to $50.00 before the next rotation ships.</p>
+    </div>
+
+    <div class="ss-legal-section" id="cancellation">
+      <span class="ss-legal-section__label">08</span>
+      <h2 class="ss-legal-section__heading">Cancellation <em>and Changes</em></h2>
+      <p>Members may cancel their membership by submitting a cancellation request through the Serenity Soule member portal during the first five days of the calendar month. Requests submitted outside that window will be held and processed at the start of the following month.</p>
+      <p>Upon cancellation your current rotation piece must be returned in acceptable condition within the standard return window using the prepaid label in your box. Your $50 deposit will be refunded once the piece is received and inspected. If any outstanding balance remains on your account, the deposit will be applied toward that balance first and any remainder returned to you.</p>
+      <p>There are no cancellation fees. Serenity Soule does not penalize members for leaving.</p>
+      <p>Pause requests follow the same process and must be submitted through the member portal during the first five days of the calendar month. Pause terms, including any implications for your current rotation and billing cycle, will be confirmed in writing before any changes take effect on your account.</p>
+      <p>Membership tier changes may also be requested through the member portal during the first five days of the calendar month and will take effect at the start of the following billing cycle.</p>
+    </div>
+
+    <div class="ss-legal-section" id="founding">
+      <span class="ss-legal-section__label">09</span>
+      <h2 class="ss-legal-section__heading">Founding <em>Cipher Terms</em></h2>
+      <p>Founding Cipher status is available to the first five members who join Serenity Soule before the public launch. Founding Ciphers receive the permanently discounted rates and escalating perks described on the membership page at serenitysoule.com/membership.</p>
+      <p>Founding Cipher rates are locked for life for as long as the membership remains active and in good standing. Serenity Soule will not raise the rates of active Founding Ciphers.</p>
+      <p>Founding Cipher status is personal and non-transferable. If a Founding Cipher cancels their membership, the founding designation is permanently retired. It cannot be reinstated and the spot does not reopen. A former Founding Cipher may rejoin Serenity Soule at the current standard public rate, but founding pricing and perks do not apply to a rejoining member.</p>
+      <p>Founding Cipher perks escalate annually as described in the membership materials. Perks are subject to availability and Serenity Soule reserves the right to substitute equivalent benefits where necessary, with advance notice to the affected member.</p>
+    </div>
+
+    <div class="ss-legal-section" id="conduct">
+      <span class="ss-legal-section__label">10</span>
+      <h2 class="ss-legal-section__heading">Member <em>Conduct</em></h2>
+      <p>By joining the Serenity Soule membership and participating in the Cipher community, you agree to conduct yourself in a manner consistent with the values of the community. Serenity Soule reserves the right to remove any member from the community or revoke membership for conduct that is abusive, harassing, threatening, or otherwise harmful to other members or to the Serenity Soule team.</p>
+      <p>Content shared within the Cipher community is for members only and may not be reproduced, distributed, or shared outside the community without the express written permission of Serenity Soule.</p>
+    </div>
+
+    <div class="ss-legal-section" id="intellectual-property">
+      <span class="ss-legal-section__label">11</span>
+      <h2 class="ss-legal-section__heading">Intellectual <em>Property</em></h2>
+      <p>All content on serenitysoule.com and within the Serenity Soule member portal, including but not limited to text, images, graphics, brand names, logos, and community content, is the property of Serenity Soule LLC or its licensors and is protected by applicable intellectual property laws.</p>
+      <p>You may not reproduce, distribute, modify, or create derivative works from any Serenity Soule content without prior written permission. Members may share their own photos and content from the community for personal, non-commercial purposes with attribution to Serenity Soule.</p>
+    </div>
+
+    <div class="ss-legal-section" id="liability">
+      <span class="ss-legal-section__label">12</span>
+      <h2 class="ss-legal-section__heading">Limitation of <em>Liability</em></h2>
+      <p>To the fullest extent permitted by applicable law, Serenity Soule shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the membership or website, including but not limited to loss of profits, data, or goodwill.</p>
+      <p>Serenity Soule's total liability to you for any claim arising from these Terms or your membership shall not exceed the total amount you paid to Serenity Soule in the three months preceding the claim.</p>
+      <p>Some jurisdictions do not allow the exclusion or limitation of certain types of damages, so the above limitations may not apply to you.</p>
+    </div>
+
+    <div class="ss-legal-section" id="disputes">
+      <span class="ss-legal-section__label">13</span>
+      <h2 class="ss-legal-section__heading">Disputes</h2>
+      <p>These Terms are governed by the laws of the State of Georgia without regard to its conflict of law provisions. Any dispute arising from these Terms or your membership that cannot be resolved informally will be subject to binding arbitration in Gwinnett County, Georgia, in accordance with the rules of the American Arbitration Association.</p>
+      <p>Before initiating any formal dispute process, you agree to contact Serenity Soule at hello@serenitysoule.com and make a good faith effort to resolve the matter directly. Serenity Soule will do the same.</p>
+      <p>You waive any right to participate in a class action lawsuit or class-wide arbitration against Serenity Soule.</p>
+    </div>
+
+    <div class="ss-legal-section" id="changes">
+      <span class="ss-legal-section__label">14</span>
+      <h2 class="ss-legal-section__heading">Changes to <em>These Terms</em></h2>
+      <p>Serenity Soule may update these Terms from time to time. When material changes are made, active members will be notified via email at least 14 days before the changes take effect. The updated Terms will be posted at serenitysoule.com/terms with a revised effective date.</p>
+      <p>Continued use of the membership after the effective date of updated Terms constitutes your acceptance of the changes. If you do not agree to the updated Terms, you may cancel your membership through the member portal before the changes take effect.</p>
+    </div>
+
+    <div class="ss-legal-section" id="contact">
+      <span class="ss-legal-section__label">15</span>
+      <h2 class="ss-legal-section__heading">Contact</h2>
+      <p>Questions about these Terms or your membership can be sent to us at any time. A real person reads and responds to every message.</p>
+      <p><strong>Serenity Soule LLC</strong><br>Lawrenceville, Georgia<br><a href="https://serenitysoule.com/contact" style="color:var(--burgundy);">hello@serenitysoule.com</a></p>
+    </div>
+
+  </div>
+</div>
+
+<footer class="ss-footer">
+  <div class="ss-footer__top">
+    <div>
+      <a href="/" class="ss-footer__brand-name">Serenity <span>Soule</span></a>
+      <span class="ss-footer__tagline">Made for this moment. Made for you.</span>
+      <p class="ss-footer__brand-desc">A premium beauty membership based in Metro Atlanta, GA. Pre-customized, ready-to-wear pieces delivered quarterly. Est. 2026.</p>
+    </div>
+    <div>
+      <span class="ss-footer__col-label">Membership</span>
+      <ul class="ss-footer__links">
+        <li><a href="/membership">All Tiers</a></li>
+        <li><a href="/how-it-works">How It Works</a></li>
+        <li><a href="/membership#founding">Founding Ciphers</a></li>
+        <li><a href="https://join.serenitysoule.com">Join Waitlist</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="ss-footer__col-label">About</span>
+      <ul class="ss-footer__links">
+        <li><a href="/about">Our Story</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="ss-footer__col-label">Follow Along</span>
+      <ul class="ss-footer__links">
+        <li><a href="https://www.instagram.com/serenitysoulebeauty" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@serenitysoule" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="https://pinterest.com/serenitysoulebeauty" target="_blank" rel="noopener">Pinterest</a></li>
+        <li><a href="https://facebook.com/serenitysoule" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ss-footer__bottom">
+    <span class="ss-footer__copy">&copy; 2026 Serenity Soule. All rights reserved. Lawrenceville, GA.</span>
+    <div class="ss-footer__social">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="https://serenitysoule.com/contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
